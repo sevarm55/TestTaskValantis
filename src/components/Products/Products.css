@@ -1,0 +1,33 @@
+.product-card {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 16px;
+  }
+  
+  .product-details {
+    flex-grow: 1;
+  }
+  
+  .product-name {
+    font-size: 1.2rem;
+    margin: 0;
+    margin-bottom: 8px;
+  }
+  
+  .product-price,
+  .product-brand {
+    margin: 0;
+  }

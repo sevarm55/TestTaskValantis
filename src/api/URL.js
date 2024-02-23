@@ -1,2 +1,2 @@
-export const PRODUCT_URL = "http://api.valantis.store:40000/"
+export const PRODUCT_URL = "http://api.valantis.store:40001/"
 

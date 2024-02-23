@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import "./Filter.css"
 import FilterDone from "../FilterDone/FilterDone"
 
-const Filter = ({ products, setFilteredProducts,filteredProducts }) => {
+const Filter = ({ products, setFilteredProducts,filteredProducts,setCurrentPage }) => {
   const [minPrice, setMinPrice] = useState("")
   const [maxPrice, setMaxPrice] = useState("")
   const [showFilterDone, setShowFilterDone] = useState(false);
@@ -27,6 +27,7 @@ const Filter = ({ products, setFilteredProducts,filteredProducts }) => {
     setShowFilterDone(true);
     setMaxPrice("")
     setMinPrice("")
+    setCurrentPage(1)
     if (minPrice && maxPrice) {
       setFilterRange(`От ${minPrice} до ${maxPrice}`);
     }
